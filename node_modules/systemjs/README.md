@@ -77,13 +77,13 @@ System.config({
 });
 ```
 
-### Promise Polyfill
+### Polyfills
 
-SystemJS relies on `Promise` being present in the environment.
+SystemJS relies on `Promise` and `URL` being present in the environment. When these are not available it will send a request out to the `system-polyfills.js` file located in the dist folder which will polyfill `window.Promise` and `window.URLPolyfill`.
 
-For the best performance in IE and older browsers, it is advisable to load [Bluebird](https://github.com/petkaantonov/bluebird) or [es6-promise](https://github.com/stefanpenner/es6-promise) before SystemJS.
+This is typically necessary in IE, so ensure to keep this file in the same folder as SystemJS.
 
-Otherwise, when Promise is not available, SystemJS will attempt to load the `system-polyfills.js` file located in the dist folder which contains the when.js Promise polyfill.
+Alternatively these polyfills can be loaded with a script tag before SystemJS or via other polyfill implementations as well.
 
 ### NodeJS
 
@@ -149,7 +149,6 @@ Additional Plugins:
 * [Markdown](https://github.com/guybedford/plugin-md)
 * [raw](https://github.com/matthewbauer/plugin-raw)
 * [SASS](https://github.com/screendriver/plugin-sass)
-* [SCSS](https://github.com/kevcjones/plugin-scss)
 * [sofe](https://github.com/CanopyTax/sofe)
 * [SVG](https://github.com/vuzonp/systemjs-plugin-svg)
 * [WebFont](https://github.com/guybedford/plugin-font)

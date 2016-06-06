@@ -1,33 +1,31 @@
 var express = require('express');
 var router = express.Router();
-var User  = require('../models/user');
+var User = require('../models/user');
 
-router.get('/', function(req, res, next) {
-    var email ='';
-    User.findOne({}, function (err, doc){
-        if(err){
-            res.send('Error');
+router.get('/', function (req, res, next) {
+ /*   var email = '';
+    User.findOne({}, function (err, doc) {
+        if (err) {
+            return res.send('Error');
         }
-        if(doc){
+        if (doc) {
             email = doc.email;
-
         }
-        res.render('node', {email:email});
-    });
-
+        res.render('node', {email: email});
+    });*/
+    res.render('index');
 });
 
-router.post('/', function(req, res, next){
+/*router.post('/', function (req, res, next) {
     var email = req.body.email;
-    var user = new User ({
+    var user = new User({
         firstName: 'Max',
-        lastName : 'Gupta',
-        password : 'supersecret',
+        lastName: 'Schwarz',
+        password: 'super-secret',
         email: email
-
     });
     user.save();
     res.redirect('/');
-});
+});*/
 
 module.exports = router;

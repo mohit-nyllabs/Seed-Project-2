@@ -5,7 +5,7 @@ if (!Zone) {
   throw new Error('zone.js does not seem to be installed');
 }
 
-const SET_TIMEOUT = '__zone_symbol__setTimeout';
+var SET_TIMEOUT = '__zone_symbol__setTimeout';
 const _global = typeof window == 'undefined' ? global : window;
 
 

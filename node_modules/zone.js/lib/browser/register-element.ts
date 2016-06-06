@@ -1,13 +1,13 @@
 import {_redefineProperty} from './define-property';
-import {isBrowser} from '../common/utils';
+import {isBrowser} from './utils';
 
 export function registerElementPatch(_global: any) {
   if (!isBrowser || !('registerElement' in (<any>_global).document)) {
     return;
   }
 
-  const _registerElement = (<any>document).registerElement;
-  const callbacks = [
+  var _registerElement = (<any>document).registerElement;
+  var callbacks = [
     'createdCallback',
     'attachedCallback',
     'detachedCallback',
@@ -17,9 +17,9 @@ export function registerElementPatch(_global: any) {
   (<any>document).registerElement = function (name, opts) {
     if (opts && opts.prototype) {
       callbacks.forEach(function (callback) {
-        const source = 'Document.registerElement::' + callback;
+        var source = 'Document.registerElement::' + callback;
         if (opts.prototype.hasOwnProperty(callback)) {
-          const descriptor = Object.getOwnPropertyDescriptor(opts.prototype, callback);
+          var descriptor = Object.getOwnPropertyDescriptor(opts.prototype, callback);
           if (descriptor && descriptor.value) {
             descriptor.value = Zone.current.wrap(descriptor.value, source);
             _redefineProperty(opts.prototype, callback, descriptor);

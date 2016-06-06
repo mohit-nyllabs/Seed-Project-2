@@ -1,13 +1,12 @@
-import {zoneSymbol} from "../common/utils";
-/*
- * This is necessary for Chrome and Chrome mobile, to enable
- * things like redefining `createdCallback` on an element.
- */
+import {zoneSymbol} from "./utils";
 
-const _defineProperty = Object.defineProperty;
-const _getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-const _create = Object.create;
-const unconfigurablesKey = zoneSymbol('unconfigurables');
+// might need similar for object.freeze
+// i regret nothing
+
+var _defineProperty = Object.defineProperty;
+var _getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var _create = Object.create;
+var unconfigurablesKey = zoneSymbol('unconfigurables');
 
 export function propertyPatch() {
   Object.defineProperty = function (obj, prop, desc) {
@@ -37,7 +36,7 @@ export function propertyPatch() {
   };
 
   Object.getOwnPropertyDescriptor = function (obj, prop) {
-    const desc = _getOwnPropertyDescriptor(obj, prop);
+    var desc = _getOwnPropertyDescriptor(obj, prop);
     if (isUnconfigurable(obj, prop)) {
       desc.configurable = false;
     }
