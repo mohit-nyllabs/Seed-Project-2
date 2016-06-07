@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {Message} from "./message";
+import {MessageService} from "./message.service"
 
 @Component({
 
@@ -12,14 +13,18 @@ import {Message} from "./message";
             </div>
             <button type="submit" class="btn btn-primary" (click)="onCreate(input.value)">Send Message</button>
             </section>            
-`
+`,
+    providers:[MessageService] //inject message service
 })
 
 export class MessageInputComponent{
 
+    constructor(private _messageService: MessageService){}
+    
     onCreate(content:string){
         const message: Message = new Message(content, null, 'Dummy');
-        console.log(message);
+        //console.log(message);
+        this._messageService.addMessage(message)
     }
 
 }
