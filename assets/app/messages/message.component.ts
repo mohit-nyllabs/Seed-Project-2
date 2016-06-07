@@ -4,7 +4,8 @@ import {Message} from "./message";
 @Component({
     selector: 'my-message',
     template: `
- <article class ="panel panel-default">
+ <article class ="panel panel-default" [ngStyle]="{'background-color': color}" 
+ (mouseenter) ="color = 'red'" (mouseleave)="color = 'white'" >
                     <div class ="panel-body">
                         {{ message.content}}
                     </div>
@@ -39,6 +40,7 @@ export class MessageComponent {
     //message: Message = new Message('The content', null, 'Max');
     @Input() message:Message;
     @Output() editClicked = new EventEmitter<string>();
+    color = 'white';
     
     onClick(){
         //this.message.content = 'Changed';
