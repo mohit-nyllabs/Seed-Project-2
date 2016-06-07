@@ -4,8 +4,7 @@ import {Message} from "./message";
 @Component({
     selector: 'my-message',
     template: `
- <article class ="panel panel-default" [ngStyle]="{'background-color': color}" 
- (mouseenter) ="color = 'red'" (mouseleave)="color = 'white'" >
+ <article class ="panel panel-default"  *ngIf ="show" >
                     <div class ="panel-body">
                         {{ message.content}}
                     </div>
@@ -40,7 +39,7 @@ export class MessageComponent {
     //message: Message = new Message('The content', null, 'Max');
     @Input() message:Message;
     @Output() editClicked = new EventEmitter<string>();
-    color = 'white';
+    show =true;  // see template binding in the html code when value is true or false, removed and added to DOM
     
     onClick(){
         //this.message.content = 'Changed';
