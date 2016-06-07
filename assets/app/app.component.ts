@@ -1,26 +1,24 @@
 import { Component, Input } from '@angular/core';
-import {MessageComponent} from "./messages/message.component";
+
 import {Message} from "./messages/message";
+import {MessageListComponent} from "./messages/message-list.component";
+import {MessageInputComponent} from "./messages/message-input.component";
 
 @Component({
     selector: 'my-app',
     template: ` 
-         <div class="row">
-             
+         <div class="row spacing">
+             <my-message-input></my-message-input>
         </div>
-        <div class = "row">
-            <section class ="col-md-8 col-md-offset-2">
-               <my-message *ngFor="let message of messages" [message]="message" (editClicked)="message.content = $event"></my-message>
-            </section>
+        <div class = "row spacing">
+          <my-message-list></my-message-list>
         </div>
        
     `,
-    directives: [MessageComponent]
+    directives: [MessageListComponent,MessageInputComponent]
 })
 export class AppComponent {
    // message: Message = new Message('A new message', null, 'Max')
-    messages: Message[] = [
-        new Message('A new message', null, 'Max'),
-        new Message('Another message', null, 'Anna')];
+   
 
 }
