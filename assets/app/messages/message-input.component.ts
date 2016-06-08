@@ -14,7 +14,8 @@ import {MessageService} from "./message.service"
             <button type="submit" class="btn btn-primary" (click)="onCreate(input.value)">Send Message</button>
             </section>            
 `,
-    providers:[MessageService] //inject message service
+    // remove providers
+    // providers:[MessageService] //inject message service
 })
 
 export class MessageInputComponent{
