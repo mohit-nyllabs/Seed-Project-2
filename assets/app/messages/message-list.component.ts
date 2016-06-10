@@ -1,8 +1,8 @@
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {MessageComponent} from "./message.component";
 import {Message} from "./message";
 import {MessageService} from "./message.service";
-import {OnInit} from "../../../public/js/vendor/@angular/core/esm/src/metadata/lifecycle_hooks";
+
 
 @Component({
 
