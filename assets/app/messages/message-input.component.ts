@@ -25,7 +25,7 @@ import {OnInit} from "../../../public/js/vendor/@angular/core/esm/src/metadata/l
 
 export class MessageInputComponent implements OnInit{
 
-    message: Message = null;
+    message: Message = null; // reference to obj
 
 
     constructor(private _messageService: MessageService){}
@@ -34,6 +34,10 @@ export class MessageInputComponent implements OnInit{
 
         if(this.message){
             // Edit
+            this.message.content = form.content;
+            this.message = null;  // refernecen to obj is changed to new object
+                                    // 
+
         }
         else{
             const message: Message = new Message(form.content, null, 'Dummy');
