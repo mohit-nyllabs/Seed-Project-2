@@ -3,11 +3,11 @@ var router = express.Router();
 
 var Message = require('../models/message')
 
-router.post('/', function(req, resp, next){
+router.post('/', function(req, res , next){
     var message = new Message({
         content: req.body.content
     });
-    messagee.save(function(err, result){
+    message.save(function(err, result){
         if(err){
             return res.status(404).json({
                 title:'An error occured',

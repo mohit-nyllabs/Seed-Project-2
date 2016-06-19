@@ -29,6 +29,10 @@ export class MessageInputComponent{
         const message: Message = new Message(form.content, null, 'Dummy');
         //console.log(message);
         this._messageService.addMessage(message)
+            .subscribe(
+                data => console.log(data),
+                error => console.error(error)
+            )
     }
     onCreate(content:string){
 
