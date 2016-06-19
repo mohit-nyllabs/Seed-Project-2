@@ -33,7 +33,7 @@ export class MessageListComponent implements OnInit{
             .subscribe(
                 messages =>  {
                     this.messages = messages;
-                    this._messageService.messages = messages;
+                    this._messageService.messages = messages; // one single object, istant updating
                 }
             );
     }

@@ -32,7 +32,7 @@ export class MessageInputComponent{
             .subscribe(
                 data => {
                     console.log(data);
-                    this._messageService.messages.push(data);  
+                    this._messageService.messages.push(data);   // comment out this and updates will not be istant
 
                 },error => console.error(error)
 
