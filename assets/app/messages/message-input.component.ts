@@ -30,8 +30,12 @@ export class MessageInputComponent{
         //console.log(message);
         this._messageService.addMessage(message)
             .subscribe(
-                data => console.log(data),
-                error => console.error(error)
+                data => {
+                    console.log(data);
+                    this._messageService.messages.push(data);  
+
+                },error => console.error(error)
+
             )
     }
     onCreate(content:string){

@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2b821f-e213-4adb-95f8-3f2cc8138b76" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/messages.js" afterPath="$PROJECT_DIR$/routes/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/messages/message-input.component.ts" afterPath="$PROJECT_DIR$/assets/app/messages/message-input.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/messages/message-list.component.ts" afterPath="$PROJECT_DIR$/assets/app/messages/message-list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/messages/message.service.ts" afterPath="$PROJECT_DIR$/assets/app/messages/message.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/messages/message-input.component.js" afterPath="$PROJECT_DIR$/public/js/app/messages/message-input.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/messages/message-list.component.js" afterPath="$PROJECT_DIR$/public/js/app/messages/message-list.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/messages/message.service.js" afterPath="$PROJECT_DIR$/public/js/app/messages/message.service.js" />
     </list>
     <ignored path="Seed Project 2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +54,11 @@
       <file leaf-file-name="message-list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/app/messages/message-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
-                <marker date="1465442816000" expanded="true" signature="305:463" ph="..." />
+                <marker date="1466371604000" expanded="true" signature="305:463" ph="..." />
               </folding>
             </state>
           </provider>
@@ -69,16 +74,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message-input.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="message-input.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/app/messages/message-input.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="253">
+              <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
-                <marker date="1466368549000" expanded="true" signature="242:643" ph="..." />
-                <marker date="1466368549000" expanded="true" signature="303:611" ph="..." />
-                <marker date="1466368549000" expanded="true" signature="342:511" ph="..." />
+                <marker date="1466372380000" expanded="true" signature="242:643" ph="..." />
+                <marker date="1466372380000" expanded="true" signature="303:611" ph="..." />
+                <marker date="1466372380000" expanded="true" signature="342:511" ph="..." />
               </folding>
             </state>
           </provider>
@@ -124,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/messages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="-195">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -137,9 +142,11 @@
       <file leaf-file-name="message.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/app/messages/message.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,7 +174,6 @@
         <option value="$PROJECT_DIR$/assets/app/message.ts" />
         <option value="$PROJECT_DIR$/assets/app/user.ts" />
         <option value="$PROJECT_DIR$/assets/app/messages/message.component.ts" />
-        <option value="$PROJECT_DIR$/assets/app/messages/message-list.component.ts" />
         <option value="$PROJECT_DIR$/assets/app/messages/messages.component.ts" />
         <option value="$PROJECT_DIR$/assets/app/header.component.ts" />
         <option value="$PROJECT_DIR$/assets/app/auth/logout.component.ts" />
@@ -178,9 +184,10 @@
         <option value="$PROJECT_DIR$/assets/app/app.component.ts" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/assets/app/boot.ts" />
-        <option value="$PROJECT_DIR$/assets/app/messages/message-input.component.ts" />
-        <option value="$PROJECT_DIR$/assets/app/messages/message.service.ts" />
         <option value="$PROJECT_DIR$/routes/messages.js" />
+        <option value="$PROJECT_DIR$/assets/app/messages/message-list.component.ts" />
+        <option value="$PROJECT_DIR$/assets/app/messages/message.service.ts" />
+        <option value="$PROJECT_DIR$/assets/app/messages/message-input.component.ts" />
       </list>
     </option>
   </component>
@@ -541,16 +548,16 @@
       <workItem from="1465243090864" duration="5784000" />
       <workItem from="1465318562385" duration="11887000" />
       <workItem from="1465333464452" duration="26973000" />
-      <workItem from="1466350198651" duration="6391000" />
+      <workItem from="1466350198651" duration="7601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63885000" />
+    <option name="totallyTimeSpent" value="65095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="699" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27799842" sideWeight="0.31376976" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27799842" sideWeight="0.68623024" order="0" side_tool="false" content_ui="combo" />
@@ -561,7 +568,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.272578" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.272578" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -600,7 +607,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -780,8 +789,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1466370249000" expanded="true" signature="834:870" ph="{...}" />
-            <marker date="1466370249000" expanded="true" signature="864:870" ph="{...}" />
+            <marker date="1466372381000" expanded="true" signature="834:870" ph="{...}" />
+            <marker date="1466372381000" expanded="true" signature="864:870" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1002,43 +1011,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/messages/message-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/routes/messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <marker date="1465442816000" expanded="true" signature="305:463" ph="..." />
-          </folding>
+        <state relative-caret-position="-195">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/messages/message-input.component.ts">
+    <entry file="file://$PROJECT_DIR$/assets/app/messages/message-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="223">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <marker date="1466368549000" expanded="true" signature="242:643" ph="..." />
-            <marker date="1466368549000" expanded="true" signature="303:611" ph="..." />
-            <marker date="1466368549000" expanded="true" signature="342:511" ph="..." />
+            <element signature="e#0#48#0" expanded="true" />
+            <marker date="1466371604000" expanded="true" signature="305:463" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/app/messages/message.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/messages.js">
+    <entry file="file://$PROJECT_DIR$/assets/app/messages/message-input.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="253">
+          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <marker date="1466372380000" expanded="true" signature="242:643" ph="..." />
+            <marker date="1466372380000" expanded="true" signature="303:611" ph="..." />
+            <marker date="1466372380000" expanded="true" signature="342:511" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
