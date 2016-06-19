@@ -7,6 +7,7 @@ import { Observable } from "rxjs/Observable";
 @Injectable()
 export class MessageService {
     messages: Message[] =[];
+    messageIsEdit = new EventEmitter<Message>();
 
     constructor (private _http: Http){}
 
@@ -46,7 +47,8 @@ export class MessageService {
     }
 
     editMessage(message: Message){
-        this.messages[this.messages.indexOf(message)] = new Message('Edited', null, 'Dummy');   
+        //this.messages[this.messages.indexOf(message)] = new Message('Edited', null, 'Dummy');
+        this.messageIsEdit.emit(message);
     }
 
     deleteMessage(message: Message){
