@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 
 var appRoutes = require('./routes/app');
 var messageRoutes = require('./routes/messages');
+var userRoutes = require('./routes/users');
 
 var app = express();
 mongoose.connect('localhost:27017/node-angular');
@@ -29,8 +30,10 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE');
     next();
 });
-//order is important of the below 
+//order is important of the below
+
 app.use('/message',messageRoutes);
+app.use('/user',userRoutes);
 app.use('/', appRoutes);
 
 
