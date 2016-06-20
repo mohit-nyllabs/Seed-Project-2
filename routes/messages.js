@@ -68,12 +68,42 @@ router.patch('/:id', function(req, res, next){
             }
             res.status(200).json({
                 message: 'Succes',
-                obj: result 
+                obj: result
             })
         }); // Mongoose doesnt create and overwrite the old content ..
     })
 });
 
+router.delete('/:id', function(req, res, next){
+
+    Message.findById(req.params.id, function(err,doc){
+        if(err){
+            return res.status(404).json({
+                title:'An error occured',
+                error: err
+            });
+        }
+        if(!doc){
+            return res.status(404).json({
+                title:'No Document found',
+                error: {message: ' Message couldnt be found'}
+            });
+        }
+
+        doc.remove(function(err, result){
+            if(err){
+                return res.status(404).json({
+                    title:'An error occured',
+                    error: err
+                });
+            }
+            res.status(200).json({
+                message: 'Succes',
+                obj: result
+            })
+        });
+    })
+});
 
 
 
