@@ -46,6 +46,19 @@ export class MessageService {
             .catch(error => Observable.throw(error.json()));
     }
 
+    updateMessage(message: Message){
+        const body = JSON.stringify(message);
+        const headers =  new Headers({
+            'Content-Type': 'application/json'
+        });
+        // to instantly update... as soon as message is changed .. array is updated
+        //this.messages[this.messages.indexOf(message)] = new Message('Edited', null, 'Dummy');
+        return this._http.patch('http://localhost:3000/message/' + message.messageId,body, {headers: headers})
+            .map(response => response.json())
+            .catch(error => Observable.throw(error.json()));
+    }
+
+    //to load our edit view to make our messages editable
     editMessage(message: Message){
         //this.messages[this.messages.indexOf(message)] = new Message('Edited', null, 'Dummy');
         this.messageIsEdit.emit(message);

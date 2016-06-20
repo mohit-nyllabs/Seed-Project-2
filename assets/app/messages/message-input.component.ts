@@ -35,8 +35,14 @@ export class MessageInputComponent implements OnInit{
         if(this.message){
             // Edit
             this.message.content = form.content;
-            this.message = null;  // refernecen to obj is changed to new object
-                                    // 
+            this._messageService.updateMessage(this.message)
+                .subscribe(
+                    data => console.log(data),
+                    error => console.error(error)
+                );
+
+            this.message = null;  // reference to obj is changed to new object
+                                    //
 
         }
         else{
